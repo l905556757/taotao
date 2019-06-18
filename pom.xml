@@ -306,4 +306,9 @@
 			</resource>
 		</resources>
 	</build>
+
+	<modules>
+		<module>taotao-manager</module>
+		<module>taotao-manager-web</module>
+	</modules>
 </project>
