@@ -11,7 +11,7 @@ import com.taotao.manager.service.TestService;
 @RequestMapping("test")
 public class TestController {
 
-	@Autowired
+	@Autowired(required = false)
 	private TestService testService;
 
 	// http://127.0.0.1/rest/test/date

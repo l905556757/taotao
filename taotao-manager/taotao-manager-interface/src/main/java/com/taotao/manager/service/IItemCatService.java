@@ -1,5 +1,6 @@
 package com.taotao.manager.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.taotao.manager.pojo.ItemCat;
 
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.List;
  * @author lh
  * @create 2019-06-13 19:30
  */
-public interface ItemCatInterface {
+public interface IItemCatService {
     /**
      * @param page
      * @param rows

@@ -3,8 +3,9 @@ package com.taotao.manager.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.taotao.manager.mapper.ItemCatMapper;
 import com.taotao.manager.pojo.ItemCat;
-import com.taotao.manager.service.ItemCatInterface;
+import com.taotao.manager.service.IItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -12,8 +13,8 @@ import java.util.List;
  * @author lwy
  * @create 2019-06-13 20:03
  */
-//@Service
-public class ItemCatService implements ItemCatInterface {
+@Service
+public class ItemCatService implements IItemCatService {
 
     @Autowired private ItemCatMapper itemCatMapper;
 
