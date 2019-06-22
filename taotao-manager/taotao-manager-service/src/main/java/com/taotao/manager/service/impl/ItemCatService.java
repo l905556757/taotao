@@ -14,9 +14,9 @@ import java.util.List;
  * @create 2019-06-13 20:03
  */
 @Service
-public class ItemCatService implements IItemCatService {
+public class ItemCatService extends IBaseServiceImpl<ItemCat> implements IItemCatService {
 
-    @Autowired private ItemCatMapper itemCatMapper;
+   /* @Autowired private ItemCatMapper itemCatMapper;
 
     @Override public List<ItemCat> queryItemCatByPage(int page, int rows) {
 
@@ -24,5 +24,6 @@ public class ItemCatService implements IItemCatService {
 
         List<ItemCat> itemCats = this.itemCatMapper.select(null);
         return itemCats;
-    }
+    }*/
+
 }

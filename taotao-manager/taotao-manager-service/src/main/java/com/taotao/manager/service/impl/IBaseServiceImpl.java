@@ -1,13 +1,12 @@
 package com.taotao.manager.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.taotao.manager.service.BaseService;
+import com.taotao.manager.service.IBaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.entity.Example;
 
 import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.List;
 
 /**
@@ -15,14 +14,14 @@ import java.util.List;
  * @description
  * @create 2019-06-20 15:01
  */
-public class BaseServiceImpl<T> implements BaseService<T> {
+public class IBaseServiceImpl<T> implements IBaseService<T> {
     @Autowired
     private Mapper<T> mapper;
 
     //将泛型类型作为成员变量，且在无参创建对象时就将其赋值
     private Class<T> clazz;
 
-    public BaseServiceImpl(){
+    public IBaseServiceImpl(){
         //通过反射获取带有泛型的父类，并将其强转获取为带有泛型的数据类型
         ParameterizedType type = (ParameterizedType) this.getClass().getGenericSuperclass();
         //获取带有泛型的数据类型的数组
@@ -51,6 +50,11 @@ public class BaseServiceImpl<T> implements BaseService<T> {
     @Override public T selectById(int id) {
         T t = mapper.selectByPrimaryKey(id);
         return t;
+    }
+
+    @Override public List<T> selectByObj(T t) {
+        List<T> select = mapper.select(t);
+        return select;
     }
 
     @Override public List<T> selectAll() {

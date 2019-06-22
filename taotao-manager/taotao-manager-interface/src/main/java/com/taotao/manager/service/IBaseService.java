@@ -1,12 +1,14 @@
 package com.taotao.manager.service;
 
+import com.taotao.manager.pojo.ItemCat;
+
 import java.util.List;
 
 /**
  * @author lwy
  * @create 2019-06-20 11:50
  */
-public interface BaseService<T> {
+public interface IBaseService<T> {
 
     public void insert(T t);
 
@@ -21,4 +23,6 @@ public interface BaseService<T> {
     public List<T> selectAll();
 
     public List<T> selectByPage(int page,int rows);
+
+    public List<T> selectByObj(T t);
 }

@@ -6,18 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="927b27e5-13f3-48b2-95c8-4e7c890b7d78" name="Default Changelist" comment="firest run">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/PageControll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/BaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="927b27e5-13f3-48b2-95c8-4e7c890b7d78" name="Default Changelist" comment="视图解析器 可以访问后台管理页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taotao-manager-web/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager-web/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taotao-manager/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/taotao-manager/taotao-manager-service/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/item-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/item-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IBaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IItemCatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IItemCatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/src/main/java/com/taotao/manager/pojo/ItemCat.java" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/src/main/java/com/taotao/manager/pojo/ItemCat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/IBaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,114 +43,136 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="taotao" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="taotao" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="taotao" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="taotao: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="taotao" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="taotao: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tb_item_cat: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="27" selection-start-line="27" selection-end-line="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/resources/spring/applicationContext-dao.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/web.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/PageControll.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taotao-manager-web/pom.xml">
-              <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="15" column="48" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="48" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/BaseServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="558">
-                  <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/BaseService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/src/main/java/com/taotao/manager/pojo/ItemCat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="683">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://7cb7878f-d071-4ce9-a12f-1cc6794f9032/schema/taotao/table/tb_item_cat">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="e58f5e8c-74e9-4575-b0e4-768c17dd41ee">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/item-add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IItemCatService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/IBaseServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IBaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7cb7878f-d071-4ce9-a12f-1cc6794f9032/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,6 +188,10 @@
       <find>192.168.37.1</find>
       <find>page</find>
       <find>index.</find>
+      <find>kingEditorParams</find>
+      <find>itemAddEditor</find>
+      <find>initItemCat</find>
+      <find>selectItemCat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,20 +203,24 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/ItemCatInterface.java" />
-        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IItemCatService.java" />
         <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/resources/spring/applicationContext-service.xml" />
         <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/taotao-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/resources/log4j.properties" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7cb7878f-d071-4ce9-a12f-1cc6794f9032/console.sql" />
-        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java" />
-        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java" />
         <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/BaseService.java" />
         <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/BaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/PageControll.java" />
+        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java" />
+        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/item-add.jsp" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IItemCatService.java" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IBaseService.java" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/IBaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7cb7878f-d071-4ce9-a12f-1cc6794f9032/console.sql" />
+        <option value="$PROJECT_DIR$/taotao-manager-web/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/src/main/java/com/taotao/manager/pojo/ItemCat.java" />
       </list>
     </option>
   </component>
@@ -220,6 +248,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="taotao-manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="taotao-manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
         <path>
@@ -231,6 +264,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="taotao-manager-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="taotao-manager-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -255,10 +293,91 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-interface" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-interface" type="616d4139:PackageViewModuleNode" />
+              <item name="com.taotao.manager.service" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-mapper" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-mapper" type="616d4139:PackageViewModuleNode" />
+              <item name="com.taotao.manager.mapper" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-pojo" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-service" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-service" type="616d4139:PackageViewModuleNode" />
+              <item name="com.taotao.manager.service.impl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-web" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-web" type="616d4139:PackageViewModuleNode" />
+              <item name="com.taotao.manager.controller" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
+              <item name="taotao-manager-web" type="616d4139:PackageViewModuleNode" />
+              <item name="spring" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="taotao-manager-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="taotao-manager-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="taotao-manager-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="taotao-manager-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +389,46 @@
               <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
               <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager-interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -291,6 +450,25 @@
               <item name="taotao-manager-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taotao-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="taotao-manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taotao-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -388,116 +566,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="Widget" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="taotao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="taotao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="manager" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="taotao-manager-interface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="taotao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="manager" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-interface" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-interface" type="616d4139:PackageViewModuleNode" />
-              <item name="com.taotao.manager.service" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-mapper" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-mapper" type="616d4139:PackageViewModuleNode" />
-              <item name="com.taotao.manager.mapper" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-service" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-service" type="616d4139:PackageViewModuleNode" />
-              <item name="com.taotao.manager.service.impl" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-web" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="taotao-parent" type="58d84e3e:PackageViewProjectNode" />
-              <item name="taotao-manager-web" type="616d4139:PackageViewModuleNode" />
-              <item name="com.taotao.manager.controller" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -713,7 +781,8 @@
       <updated>1560849857427</updated>
       <workItem from="1560849873199" duration="16979000" />
       <workItem from="1560919551633" duration="23699000" />
-      <workItem from="1561000977722" duration="19982000" />
+      <workItem from="1561000977722" duration="23839000" />
+      <workItem from="1561177927040" duration="13389000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1560855679266</created>
@@ -729,22 +798,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560938150712</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="视图解析器 可以访问后台管理页面">
+      <created>1561033713808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561033713808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60660000" />
+    <option name="totallyTimeSpent" value="77906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118138425" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14200477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32977912" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901752" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35795888" />
@@ -753,7 +828,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32977912" />
-      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32977912" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -763,6 +838,7 @@
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49960223" weight="0.32901752" />
       <window_info anchor="bottom" id="LuaCheck" order="16" />
       <window_info anchor="bottom" id="Tail" order="17" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.32901752" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -781,7 +857,8 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="first" />
     <MESSAGE value="firest run" />
-    <option name="LAST_COMMIT_MESSAGE" value="firest run" />
+    <MESSAGE value="视图解析器 可以访问后台管理页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="视图解析器 可以访问后台管理页面" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/resources/log4j.properties">
@@ -838,16 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IItemCatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -869,34 +936,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/TestServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,21 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7cb7878f-d071-4ce9-a12f-1cc6794f9032/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -945,65 +973,141 @@
     <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/home.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3492">
-          <caret line="73" column="80" lean-forward="true" selection-start-line="73" selection-start-column="80" selection-end-line="73" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/resources/spring/applicationContext-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/BaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/PageControll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="234">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE.jar!/org/springframework/web/bind/annotation/PathVariable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/TestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IItemCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-interface/src/main/java/com/taotao/manager/service/IBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/IBaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/manager/service/impl/ItemCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/manager/controller/ItemCatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7cb7878f-d071-4ce9-a12f-1cc6794f9032/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://7cb7878f-d071-4ce9-a12f-1cc6794f9032/schema/taotao/table/tb_item_cat">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e58f5e8c-74e9-4575-b0e4-768c17dd41ee">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/webapp/WEB-INF/views/item-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/src/main/java/com/taotao/manager/pojo/ItemCat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
         </state>
       </provider>
     </entry>

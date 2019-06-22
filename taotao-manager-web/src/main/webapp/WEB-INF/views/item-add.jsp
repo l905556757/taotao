@@ -128,7 +128,9 @@
 	//类目选择初始化
 	function initItemCat(){
 		var selectItemCat = $(".selectItemCat");
+		//触发商品类目点击事件
    		selectItemCat.click(function(){
+   			//创建一个div 并打开一个window窗口
    			$("<div>").css({padding:"5px"}).html("<ul>")
    			.window({
    				width:'500',
@@ -144,6 +146,7 @@
    			    		method:'GET',
    			    		animate:true,
    			    		onClick : function(node){
+   			    			// 判断是否为叶子节点
    			    			if($(this).tree("isLeaf",node.target)){
    			    				// 填写到cid中
    			    				selectItemCat.parent().find("[name=cid]").val(node.id);
