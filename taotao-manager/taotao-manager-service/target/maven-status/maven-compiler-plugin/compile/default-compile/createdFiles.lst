@@ -1,0 +1,5 @@
+com\taotao\manager\service\impl\TestServiceImpl.class
+com\taotao\manager\service\impl\IBaseServiceImpl.class
+com\taotao\manager\service\impl\ItemCatService.class
+com\taotao\manager\service\impl\ItemDescService.class
+com\taotao\manager\service\impl\ItemService.class

@@ -30,6 +30,10 @@
     <dubbo:annotation package="com.taotao.manager.service.*"/>
     <dubbo:service interface="com.taotao.manager.service.TestService"
                    ref="testServiceImpl"/>
-    <dubbo:service interface="com.taotao.manager.service.IItemCatService" ref="itemCatService"/>
-
+    <dubbo:service interface="com.taotao.manager.service.IItemCatService"
+                   ref="itemCatService"/>
+    <dubbo:service interface="com.taotao.manager.service.IItemService"
+                   ref="itemService"/>
+    <dubbo:service interface="com.taotao.manager.service.IItemDescService"
+                   ref="itemDescService"/>
 </beans>

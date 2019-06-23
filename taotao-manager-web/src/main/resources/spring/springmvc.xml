@@ -35,5 +35,7 @@
                      id="testService" timeout="1000000"/>
     <dubbo:reference interface="com.taotao.manager.service.IItemCatService"
                      id="iItemCatService"/>
+    <dubbo:reference interface="com.taotao.manager.service.IItemService"
+                     id="iItemService"/>
 
 </beans>

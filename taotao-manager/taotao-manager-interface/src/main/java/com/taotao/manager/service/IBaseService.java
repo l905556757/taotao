@@ -18,7 +18,7 @@ public interface IBaseService<T> {
 
     public void update(T t);
 
-    public T selectById(int id);
+    public T selectById(Long id);
 
     public List<T> selectAll();
 

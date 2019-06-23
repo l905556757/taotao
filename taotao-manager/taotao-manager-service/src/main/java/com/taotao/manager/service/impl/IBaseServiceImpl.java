@@ -1,12 +1,14 @@
 package com.taotao.manager.service.impl;
 
 import com.github.pagehelper.PageHelper;
+import com.taotao.manager.pojo.BasePojo;
 import com.taotao.manager.service.IBaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.entity.Example;
 
 import java.lang.reflect.ParameterizedType;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -14,20 +16,28 @@ import java.util.List;
  * @description
  * @create 2019-06-20 15:01
  */
-public class IBaseServiceImpl<T> implements IBaseService<T> {
+public class IBaseServiceImpl<T extends BasePojo> implements IBaseService<T> {
     @Autowired
     private Mapper<T> mapper;
 
     //将泛型类型作为成员变量，且在无参创建对象时就将其赋值
     private Class<T> clazz;
 
-    public IBaseServiceImpl(){
+    public IBaseServiceImpl() {
         //通过反射获取带有泛型的父类，并将其强转获取为带有泛型的数据类型
         ParameterizedType type = (ParameterizedType) this.getClass().getGenericSuperclass();
         //获取带有泛型的数据类型的数组
         Class<T> clazz = (Class<T>) type.getActualTypeArguments()[0];
     }
+
     @Override public void insert(T t) {
+        if (t.getCreated() == null) {
+            t.setCreated(new Date());
+            t.setUpdated(t.getCreated());
+        } else if (t.getUpdated() == null) {
+            t.setUpdated(new Date());
+        }
+
         mapper.insert(t);
     }
 
@@ -37,7 +47,7 @@ public class IBaseServiceImpl<T> implements IBaseService<T> {
 
     @Override public int deleteByIds(List<Object> list) {
         Example example = new Example(clazz);
-        example.createCriteria().andIn("id",list);
+        example.createCriteria().andIn("id", list);
         int i = mapper.deleteByExample(example);
         return i;
     }
@@ -47,7 +57,7 @@ public class IBaseServiceImpl<T> implements IBaseService<T> {
 
     }
 
-    @Override public T selectById(int id) {
+    @Override public T selectById(Long id) {
         T t = mapper.selectByPrimaryKey(id);
         return t;
     }
@@ -63,7 +73,7 @@ public class IBaseServiceImpl<T> implements IBaseService<T> {
     }
 
     @Override public List<T> selectByPage(int page, int rows) {
-        PageHelper.startPage(page,rows);
+        PageHelper.startPage(page, rows);
         List<T> select = mapper.select(null);
         return select;
     }

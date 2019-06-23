@@ -39,7 +39,7 @@ public class ItemCatController {
      */
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public List<ItemCat> queryItemCatsByPatentId(@RequestParam(value = "parentId", defaultValue = "0") Long parentId) {
+    public List<ItemCat> queryItemCatsByPatentId(@RequestParam(value = "id", defaultValue = "0") Long parentId) {
 
         ItemCat itemCat = new ItemCat();
         itemCat.setParentId(parentId);
